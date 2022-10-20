@@ -49,7 +49,7 @@ public class App {
         Connection connection = new Connection();
         JdbcTemplate con = connection.getConnection();
 
-        Integer fkTotem = 3;
+        Integer fkTotem = 1;
 //        Boolean first = true;
         Boolean start = true;
 
