@@ -174,10 +174,12 @@ public class Login extends javax.swing.JFrame {
         String email = String.valueOf(txtEmail.getText());
         String senha = String.valueOf(txtSenha.getPassword());
 
-        List emailVal = con.queryForList("SELECT email FROM usuario2 WHERE email = '" + email + "'");
+        List emailVal = con.queryForList("SELECT email FROM usuario WHERE email = '" + email + "' and senha = '" + senha + "'");
         String emailString = String.valueOf(emailVal);
-        List senhaVal = con.queryForList("SELECT senha FROM usuario2 WHERE senha = '" + senha + "'");
+        List senhaVal = con.queryForList("SELECT senha FROM usuario WHERE senha = '" + senha + "' and email = '" + email + "'");
         String senhaString = String.valueOf(senhaVal);
+//        System.out.println(emailString);
+//        System.out.println(senhaVal);
 
         if (emailString.equals("[{email=" + email + "}]") && senhaString.equals("[{senha=" + senha + "}]")) {
             Home home = new Home();

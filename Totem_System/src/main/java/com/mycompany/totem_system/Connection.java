@@ -22,9 +22,9 @@
  * THE SOFTWARE.
  */
 package com.mycompany.totem_system;
+
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
-
 
 /**
  *
@@ -37,15 +37,25 @@ public class Connection {
     // Exemplo de configuração utilizando H2
     // Obs. O código comentado é um exemplo de como se conectar ao mysql
     public Connection() {
+//        BasicDataSource datasource = new BasicDataSource();
+//
+//        datasource.setDriverClassName("com.mysql.jdbc.Driver");
+//
+//        datasource.setUrl("jdbc:mysql://localhost/totem1");
+//
+//        datasource.setUsername("root");
+//
+//        datasource.setPassword("urubu100");
+
         BasicDataSource datasource = new BasicDataSource();
 
-        datasource.setDriverClassName("com.mysql.jdbc.Driver");
-
-        datasource.setUrl("jdbc:mysql://localhost/totem1");
-
-        datasource.setUsername("root");
-
-        datasource.setPassword("urubu100");
+        datasource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+// exemplo para MySql: "com.mysql.cj.jdbc.Driver"
+        datasource.setUrl("jdbc:sqlserver://svr-totemsystem.database.windows.net:1433;database=bd-totemsystem;encryp\n" +
+"t=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;");
+// exemplo para MySql: "jdbc:mysql://localhost:3306/meubanco"
+        datasource.setUsername("admin-totemsystem");
+        datasource.setPassword("Urubu100@");
 
         //this.datasource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         //this.datasource.setUrl("jdbc:mysql://localhost:3360/meu_banco");

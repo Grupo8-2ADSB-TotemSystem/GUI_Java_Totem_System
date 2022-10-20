@@ -35,6 +35,7 @@ import com.github.britooo.looca.api.util.Conversor;
 import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.concurrent.TimeUnit;
+import org.springframework.dao.DataAccessException;
 
 /**
  *
@@ -56,19 +57,24 @@ public class App {
         log.show();
 
         // Limpar as tabelas
-        String deleteDisco = String.format("DELETE FROM disco WHERE fkTotem = %d;", fkTotem);
-        con.update(deleteDisco);
-        String deleteMemoria = String.format("DELETE FROM memoria WHERE fkTotem = %d;", fkTotem);
-        con.update(deleteMemoria);
-        String deleteProcessador = String.format("DELETE FROM processador WHERE fkTotem = %d;", fkTotem);
-        con.update(deleteProcessador);
+        try {
+            String deleteDisco = String.format("DELETE FROM disco WHERE fkTotem = %d;", fkTotem);
+            con.update(deleteDisco);
+            String deleteMemoria = String.format("DELETE FROM memoria WHERE fkTotem = %d;", fkTotem);
+            con.update(deleteMemoria);
+            String deleteProcessador = String.format("DELETE FROM processador WHERE fkTotem = %d;", fkTotem);
+            con.update(deleteProcessador); 
+        } catch (DataAccessException e) {
+            
+        }
+
 //        System.out.println("Deletou???");
         // Inserir na tabela disco
 
         long volumeTotal = looca.getGrupoDeDiscos().getTamanhoTotal();
         String volumeTotalInsert = Conversor.formatarBytes(volumeTotal);
 
-        String insertStatementDisco = "INSERT INTO disco VALUES (null, ?,  ?);";
+        String insertStatementDisco = "INSERT INTO disco VALUES (?,  ?);";
 
         con.update(insertStatementDisco, fkTotem, volumeTotalInsert);
 //        System.out.println("Inseriu na tabela disco");
@@ -77,7 +83,7 @@ public class App {
         long memoriaTotal = looca.getMemoria().getTotal();
         String memoriaTotalInsert = Conversor.formatarBytes(memoriaTotal);
 
-        String insertStatementMemoria = "INSERT INTO memoria VALUES (null, ?,  ?);";
+        String insertStatementMemoria = "INSERT INTO memoria VALUES (?,  ?);";
 
         con.update(insertStatementMemoria, fkTotem, memoriaTotalInsert);
 //        System.out.println("Inseriu na tabela memoria");
@@ -88,7 +94,7 @@ public class App {
         String microArq = looca.getProcessador().getMicroarquitetura();
         long frequenciaProcessador = looca.getProcessador().getFrequencia();
 
-        String insertStatementProcessador = "INSERT INTO processador VALUES (null, ?, ?, ?, ?, ?);";
+        String insertStatementProcessador = "INSERT INTO processador VALUES (?, ?, ?, ?, ?);";
 
         con.update(insertStatementProcessador, fkTotem, fabricanteProcessador, nomeProcessador, microArq, frequenciaProcessador);
 //        System.out.println("Inseriu na tabela processador");
@@ -106,7 +112,7 @@ public class App {
             String processadorUsoInsert = String.format("%.2f", processadorUso) + "%";
             Double temperatura = looca.getTemperatura().getTemperatura();
 
-            String insertStatement = "INSERT INTO dado VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
+            String insertStatement = "INSERT INTO dado VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
 
             con.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
 //            System.out.println("Inseriu na tabela dado");
