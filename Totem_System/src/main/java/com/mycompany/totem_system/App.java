@@ -48,6 +48,8 @@ public class App {
         Looca looca = new Looca();
         Connection connection = new Connection();
         JdbcTemplate con = connection.getConnection();
+        ConnectionSQL connectionSQL = new ConnectionSQL();
+        JdbcTemplate conSQL = connectionSQL.getConnection();
 
         Integer fkTotem = 1;
 //        Boolean first = true;
@@ -64,6 +66,7 @@ public class App {
             con.update(deleteMemoria);
             String deleteProcessador = String.format("DELETE FROM processador WHERE fkTotem = %d;", fkTotem);
             con.update(deleteProcessador); 
+            
         } catch (DataAccessException e) {
             
         }
@@ -77,6 +80,7 @@ public class App {
         String insertStatementDisco = "INSERT INTO disco VALUES (?,  ?);";
 
         con.update(insertStatementDisco, fkTotem, volumeTotalInsert);
+        conSQL.update(insertStatementDisco, fkTotem, volumeTotalInsert);
 //        System.out.println("Inseriu na tabela disco");
 
         // Inserir na tabela memoria
@@ -86,6 +90,7 @@ public class App {
         String insertStatementMemoria = "INSERT INTO memoria VALUES (?,  ?);";
 
         con.update(insertStatementMemoria, fkTotem, memoriaTotalInsert);
+        conSQL.update(insertStatementMemoria, fkTotem, memoriaTotalInsert);
 //        System.out.println("Inseriu na tabela memoria");
 
         // Inserir na tabela processador
@@ -97,6 +102,7 @@ public class App {
         String insertStatementProcessador = "INSERT INTO processador VALUES (?, ?, ?, ?, ?);";
 
         con.update(insertStatementProcessador, fkTotem, fabricanteProcessador, nomeProcessador, microArq, frequenciaProcessador);
+        conSQL.update(insertStatementProcessador, fkTotem, fabricanteProcessador, nomeProcessador, microArq, frequenciaProcessador);
 //        System.out.println("Inseriu na tabela processador");
 
         // Inserir na tabela dado 
@@ -115,6 +121,7 @@ public class App {
             String insertStatement = "INSERT INTO dado VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
 
             con.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
+            conSQL.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
 //            System.out.println("Inseriu na tabela dado");
         }
 

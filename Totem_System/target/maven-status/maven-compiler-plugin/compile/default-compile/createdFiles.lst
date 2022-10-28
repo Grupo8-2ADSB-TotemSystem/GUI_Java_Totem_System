@@ -14,3 +14,4 @@ com\mycompany\totem_system\Disco.class
 com\mycompany\totem_system\NewClass.class
 com\mycompany\totem_system\Dado.class
 com\mycompany\totem_system\Login.class
+com\mycompany\totem_system\ConnectionSQL.class
