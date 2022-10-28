@@ -37,15 +37,15 @@ public class Connection {
     // Exemplo de configuração utilizando H2
     // Obs. O código comentado é um exemplo de como se conectar ao mysql
     public Connection() {
-//        BasicDataSource datasource = new BasicDataSource();
-//
-//        datasource.setDriverClassName("com.mysql.jdbc.Driver");
-//
-//        datasource.setUrl("jdbc:mysql://localhost/totem1");
-//
-//        datasource.setUsername("root");
-//
-//        datasource.setPassword("urubu100");
+        BasicDataSource datasource1 = new BasicDataSource();
+
+        datasource1.setDriverClassName("com.mysql.jdbc.Driver");
+
+        datasource1.setUrl("jdbc:mysql://localhost/totembd");
+
+        datasource1.setUsername("root");
+
+        datasource1.setPassword("urubu100");
 
         BasicDataSource datasource = new BasicDataSource();
 
@@ -62,6 +62,7 @@ public class Connection {
         //this.datasource.setUsername("root");
         //this.datasource.setPassword("teste");
         connection = new JdbcTemplate(datasource);
+        connection = new JdbcTemplate(datasource1);
     }
 
     public JdbcTemplate getConnection() {
