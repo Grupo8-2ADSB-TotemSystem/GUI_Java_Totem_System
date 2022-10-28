@@ -80,7 +80,7 @@ public class App {
         String insertStatementDisco = "INSERT INTO disco VALUES (?,  ?);";
 
         con.update(insertStatementDisco, fkTotem, volumeTotalInsert);
-        conSQL.update(insertStatementDisco, fkTotem, volumeTotalInsert);
+//        conSQL.update(insertStatementDisco, fkTotem, volumeTotalInsert);
 //        System.out.println("Inseriu na tabela disco");
 
         // Inserir na tabela memoria
@@ -90,7 +90,7 @@ public class App {
         String insertStatementMemoria = "INSERT INTO memoria VALUES (?,  ?);";
 
         con.update(insertStatementMemoria, fkTotem, memoriaTotalInsert);
-        conSQL.update(insertStatementMemoria, fkTotem, memoriaTotalInsert);
+//        conSQL.update(insertStatementMemoria, fkTotem, memoriaTotalInsert);
 //        System.out.println("Inseriu na tabela memoria");
 
         // Inserir na tabela processador
@@ -102,8 +102,8 @@ public class App {
         String insertStatementProcessador = "INSERT INTO processador VALUES (?, ?, ?, ?, ?);";
 
         con.update(insertStatementProcessador, fkTotem, fabricanteProcessador, nomeProcessador, microArq, frequenciaProcessador);
-        conSQL.update(insertStatementProcessador, fkTotem, fabricanteProcessador, nomeProcessador, microArq, frequenciaProcessador);
-//        System.out.println("Inseriu na tabela processador");
+//        conSQL.update(insertStatementProcessador, fkTotem, fabricanteProcessador, nomeProcessador, microArq, frequenciaProcessador);
+//        System.out.println("Inseriu na tabela processador"); 
 
         // Inserir na tabela dado 
         // Fica constantemente inserindo dados
