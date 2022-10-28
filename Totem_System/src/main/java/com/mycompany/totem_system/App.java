@@ -119,10 +119,11 @@ public class App {
             Double temperatura = looca.getTemperatura().getTemperatura();
 
             String insertStatement = "INSERT INTO dado VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
+            String insertStatement2 = "INSERT INTO dado VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
 
             con.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
-            conSQL.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
-//            System.out.println("Inseriu na tabela dado");
+            conSQL.update(insertStatement2, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
+            System.out.println("Inseriu na tabela dado");
         }
 
     }
