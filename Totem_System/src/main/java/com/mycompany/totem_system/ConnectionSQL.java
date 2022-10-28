@@ -20,7 +20,7 @@ public class ConnectionSQL {
 
         datasource.setDriverClassName("com.mysql.jdbc.Driver");
 
-        datasource.setUrl("jdbc:mysql://localhost/totembd");
+        datasource.setUrl("jdbc:mysql://localhost:3306/totembd");
 
         datasource.setUsername("root");
 
