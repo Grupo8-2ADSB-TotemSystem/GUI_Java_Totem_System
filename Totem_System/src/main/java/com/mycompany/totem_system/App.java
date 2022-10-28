@@ -74,12 +74,12 @@ public class App {
 //        System.out.println("Deletou???");
         // Inserir na tabela disco
 
-        long volumeTotal = looca.getGrupoDeDiscos().getTamanhoTotal();
-        String volumeTotalInsert = Conversor.formatarBytes(volumeTotal);
+//        long volumeTotal = looca.getGrupoDeDiscos().getTamanhoTotal();
+//        String volumeTotalInsert = Conversor.formatarBytes(volumeTotal);
+//
+//        String insertStatementDisco = "INSERT INTO disco VALUES (?, ?);";
 
-        String insertStatementDisco = "INSERT INTO disco VALUES (?,  ?);";
-
-        con.update(insertStatementDisco, fkTotem, volumeTotalInsert);
+//        con.update(insertStatementDisco, fkTotem, volumeTotalInsert);
 //        conSQL.update(insertStatementDisco, fkTotem, volumeTotalInsert);
 //        System.out.println("Inseriu na tabela disco");
 
