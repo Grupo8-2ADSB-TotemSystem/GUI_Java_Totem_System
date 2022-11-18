@@ -66,9 +66,12 @@
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
-            <version>7.2.2.jre8</version>
-            <!-- ou versão 7.2.2.jre11, se sua JDK for a 11 -->
-            <!-- ou versão que já existir na .m2 local -->
+            <version>12.1.0.jre11-preview</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20201115</version>
         </dependency>
 
     </dependencies>

@@ -48,8 +48,8 @@ public class App {
         Looca looca = new Looca();
         Connection connection = new Connection();
         JdbcTemplate con = connection.getConnection();
-        ConnectionSQL connectionSQL = new ConnectionSQL();
-        JdbcTemplate conSQL = connectionSQL.getConnection();
+//        ConnectionSQL connectionSQL = new ConnectionSQL();
+//        JdbcTemplate conSQL = connectionSQL.getConnection();
 
         Integer fkTotem = 1;
 //        Boolean first = true;
@@ -122,7 +122,7 @@ public class App {
             String insertStatement2 = "INSERT INTO dado VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
 
             con.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
-            conSQL.update(insertStatement2, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
+//            conSQL.update(insertStatement2, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
             System.out.println("Inseriu na tabela dado");
         }
 
