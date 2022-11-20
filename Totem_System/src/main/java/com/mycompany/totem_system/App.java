@@ -110,18 +110,25 @@ public class App {
         while (start) {
             TimeUnit.SECONDS.sleep(20);
 //          Dados volateis
+//          Memoria
             long memoriaUso = looca.getMemoria().getEmUso();
-            String memoriaUsoInsert = Conversor.formatarBytes(memoriaUso);
+            String memoriaUsoForm = Conversor.formatarBytes(memoriaUso).replace("GiB", "").replace(",", ".");
+            Double memoriaUsoInsert = Double.parseDouble(memoriaUsoForm);
+//          RAM
             long memoriaDisponivel = looca.getMemoria().getDisponivel();
-            String memoriaDisponivelinsert = Conversor.formatarBytes(memoriaDisponivel);
+            String memoriaDisponiveForm = Conversor.formatarBytes(memoriaDisponivel).replace("GiB", "").replace(",", ".").replace("MiB","");
+            Double memoriaDisponivelInsert = Double.parseDouble(memoriaDisponiveForm);
+//          Processador
             Double processadorUso = looca.getProcessador().getUso();
-            String processadorUsoInsert = String.format("%.2f", processadorUso) + "%";
+            String processadorUsoForm = String.format("%.2f", processadorUso).replace(",", ".");
+            Double processadorUsoInsert = Double.parseDouble(processadorUsoForm);
+//          Temperatura
             Double temperatura = looca.getTemperatura().getTemperatura();
 
             String insertStatement = "INSERT INTO dado VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
-            String insertStatement2 = "INSERT INTO dado VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
+//            String insertStatement2 = "INSERT INTO dado VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)";
 
-            con.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
+            con.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelInsert, processadorUsoInsert, temperatura);
 //            conSQL.update(insertStatement2, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
             System.out.println("Inseriu na tabela dado");
         }
