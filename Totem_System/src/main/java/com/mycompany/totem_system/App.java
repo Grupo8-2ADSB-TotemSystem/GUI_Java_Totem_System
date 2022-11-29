@@ -69,14 +69,13 @@ public class App {
         Integer fkTotem = 1;
 //        Boolean first = true;
         Boolean start = true;
-        
+
         Boolean meMsg = false;
         Boolean proMsg = false;
         Boolean tempMsg = false;
 
         Login log = new Login();
         log.show();
-
 
         try {
 
@@ -107,7 +106,7 @@ public class App {
             long memoriaTotal = looca.getMemoria().getTotal();
             String memoriaTotalForm = Conversor.formatarBytes(memoriaTotal).replace("GiB", "").replace(",", ".").replace("MiB", "");
             Double memoriaTotalInsert = Double.parseDouble(memoriaTotalForm);
-            System.out.println("@@@@" + memoriaTotalInsert);
+//            System.out.println("@@@@" + memoriaTotalInsert);
 
             String insertStatementMemoria = "INSERT INTO memoria VALUES (?,  ?);";
 
@@ -134,12 +133,12 @@ public class App {
 //          Dados volateis
 //          Memoria
                 long memoriaUso = looca.getMemoria().getEmUso();
-                String memoriaUsoForm = Conversor.formatarBytes(memoriaUso).replace("GiB", "").replace(",", ".");
+                String memoriaUsoForm = Conversor.formatarBytes(memoriaUso).replace("GiB", "").replace(",", ".").replace("MiB", "");
                 Double memoriaUsoInsert = Double.parseDouble(memoriaUsoForm);
                 Long memTotal = looca.getMemoria().getTotal();
-                String memTotalForm = Conversor.formatarBytes(memTotal).replace("GiB", "").replace(",", ".");
+                String memTotalForm = Conversor.formatarBytes(memTotal).replace("GiB", "").replace(",", ".").replace("MiB", "");
                 Double memTotalInsert = Double.parseDouble(memTotalForm);
-                
+
 //          RAM
                 long memoriaDisponivel = looca.getMemoria().getDisponivel();
                 String memoriaDisponiveForm = Conversor.formatarBytes(memoriaDisponivel).replace("GiB", "").replace(",", ".").replace("MiB", "");
@@ -156,10 +155,9 @@ public class App {
 
                 con.update(insertStatement, fkTotem, memoriaUsoInsert, memoriaDisponivelInsert, processadorUsoInsert, temperatura);
 //            conSQL.update(insertStatement2, fkTotem, memoriaUsoInsert, memoriaDisponivelinsert, processadorUsoInsert, temperatura);
-                System.out.println("Inseriu na tabela dado");
+//                System.out.println("Inseriu na tabela dado");
 
 //            Alerta memoria
-                
                 List<Parametro> cpuT1 = con.query("SELECT idParametro, memoriaUsoMax, processadorUsoMax, temperaturaMax, fkTotem FROM parametros WHERE fkTotem = " + fkTotem + ";", new BeanPropertyRowMapper(Parametro.class));
                 Double memoriaMax;
                 Double processadorMax;
@@ -168,33 +166,37 @@ public class App {
                     memoriaMax = dado.getMemoriaUsoMax();
                     processadorMax = dado.getProcessadorUsoMax();
                     temperaturaMax = dado.getTemperaturaMax();
-                    
-                    Double aa = memoriaUsoInsert / (memTotalInsert / 100);
-                    System.out.println("####" + aa);
+                    Double memoriaRam = memoriaUsoInsert / (memTotalInsert / 100);
+//                    System.out.println(memoriaRam);
+                    String memoria100 = String.format("%.2f", memoriaRam);
+//                    System.out.println(memoria100);
+//                    System.out.println("####" + aa);
                     if ((memoriaUsoInsert / (memTotalInsert / 100)) > memoriaMax && meMsg == false) {
                         mensage.put("text", "O uso da memória superou o limite!!\n"
-                                + "Uso de memória: " + memoriaUsoInsert);
+                                + "Uso de memória: " + memoria100);
                         meMsg = true;
                         Slack.sendMensage(mensage);
-                        System.out.println("Mensagem enviada!!");
+                        System.out.println("O uso da memória superou o limite!!\n"
+                                + "Uso de memória: " + memoria100);
                     }
 //                    memoriaUsoInsert = 0.5;
                     if (meMsg && (memoriaUsoInsert / (memTotalInsert / 100)) < memoriaMax) {
                         mensage.put("text", "O uso da memória voltou ao normal!!\n"
-                                + "Uso de memória: " + memoriaUsoInsert);
+                                + "Uso de memória: " + memoria100);
                         meMsg = false;
                         Slack.sendMensage(mensage);
-                        System.out.println("Mensagem enviada2!!");
+                        System.out.println("O uso da memória superou o limite!!\n"
+                                + "Uso de memória: " + memoria100);
                     }
 
 //            Alerta processador
-                    
                     if (processadorUsoInsert > processadorMax && proMsg == false) {
                         mensage.put("text", "O uso do processador superou o limite!!\n"
                                 + "Uso de memória: " + processadorUsoInsert);
                         proMsg = true;
                         Slack.sendMensage(mensage);
-                        System.out.println("Mensagem enviada!!");
+                        System.out.println("O uso do processador superou o limite!!\n"
+                                + "Uso de memória: " + processadorUsoInsert);
                     }
 //                    processadorUsoInsert = 0.5;
                     if (proMsg && processadorUsoInsert < processadorMax) {
@@ -202,16 +204,18 @@ public class App {
                                 + "Uso de memória: " + processadorUsoInsert);
                         proMsg = false;
                         Slack.sendMensage(mensage);
-                        System.out.println("Mensagem enviada2!!");
+                        System.out.println("O uso do processador superou o limite!!\n"
+                                + "Uso de memória: " + processadorUsoInsert);
                     }
 //            Alerta temperatura
-                    
+
                     if (temperatura > temperaturaMax && tempMsg == false) {
                         mensage.put("text", "O uso da temperatura superou o limite!!\n"
                                 + "Uso de memória: " + temperatura);
                         tempMsg = true;
                         Slack.sendMensage(mensage);
-                        System.out.println("Mensagem enviada!!");
+                        System.out.println("O uso da temperatura superou o limite!!\n"
+                                + "Uso de memória: " + temperatura);
                     }
 //                    temperatura = 0.5;
                     if (tempMsg && memoriaUsoInsert < temperaturaMax) {
@@ -219,13 +223,13 @@ public class App {
                                 + "Uso de memória: " + temperatura);
                         tempMsg = false;
                         Slack.sendMensage(mensage);
-                        System.out.println("Mensagem enviada2!!");
+                        System.out.println("O uso da temperatura superou o limite!!\n"
+                                + "Uso de memória: " + temperatura);
                     }
                 }
             }
         } catch (Exception e) {
             String data = new SimpleDateFormat("dd-MM-yyyy-HH-mm-ss").format(dataHoraAtual);
-            System.out.println("@@@@" + e);
             String logName = "ERROR-" + data + ".txt";
             OutputStream os = new FileOutputStream(logName); // nome do arquivo que será escrito
             Writer wr = new OutputStreamWriter(os); // criação de um escritor
@@ -237,18 +241,6 @@ public class App {
             br.write(e + "\n");
             br.close();
         }
-    }
-
-    public Integer getTotem() {
-        return totem;
-    }
-
-    public void setTotem(Integer totem) {
-        this.totem = totem;
-    }
-
-    public App(Integer totem) {
-        this.totem = totem;
     }
 
 }
