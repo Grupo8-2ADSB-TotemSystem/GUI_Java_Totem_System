@@ -1,3 +1,5 @@
+com\mycompany\totem_system\CadTotem$1.class
+com\mycompany\totem_system\teste2.class
 com\mycompany\totem_system\Home.class
 com\mycompany\totem_system\Looca.class
 com\mycompany\totem_system\Totem.class
@@ -8,11 +10,13 @@ com\mycompany\totem_system\Home$2.class
 com\mycompany\totem_system\Login$1.class
 com\mycompany\totem_system\Connection.class
 com\mycompany\totem_system\Login$2.class
+com\mycompany\totem_system\CadTotem$3.class
 com\mycompany\totem_system\Estacao.class
 com\mycompany\totem_system\Home$1.class
+com\mycompany\totem_system\Parametro.class
+com\mycompany\totem_system\CadTotem.class
 com\mycompany\totem_system\Disco.class
 com\mycompany\totem_system\Slack.class
-com\mycompany\totem_system\NewClass.class
 com\mycompany\totem_system\Dado.class
 com\mycompany\totem_system\Login.class
-com\mycompany\totem_system\ConnectionSQL.class
+com\mycompany\totem_system\CadTotem$2.class

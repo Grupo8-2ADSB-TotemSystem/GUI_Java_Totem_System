@@ -68,40 +68,6 @@ public class Home extends javax.swing.JFrame {
         ramDispTotem1 = new javax.swing.JLabel();
         cpuTotem1 = new javax.swing.JLabel();
         tempTotem1 = new javax.swing.JLabel();
-        jPanel10 = new javax.swing.JPanel();
-        jPanel16 = new javax.swing.JPanel();
-        jLabel100 = new javax.swing.JLabel();
-        jLabel101 = new javax.swing.JLabel();
-        jLabel102 = new javax.swing.JLabel();
-        jLabel103 = new javax.swing.JLabel();
-        jLabel104 = new javax.swing.JLabel();
-        jLabel105 = new javax.swing.JLabel();
-        jLabel106 = new javax.swing.JLabel();
-        jLabel107 = new javax.swing.JLabel();
-        estacaoTotem3 = new javax.swing.JLabel();
-        marcaTotem3 = new javax.swing.JLabel();
-        soTotem3 = new javax.swing.JLabel();
-        ramTotem3 = new javax.swing.JLabel();
-        ramDispTotem3 = new javax.swing.JLabel();
-        cpuTotem3 = new javax.swing.JLabel();
-        tempTotem3 = new javax.swing.JLabel();
-        jPanel12 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
-        jLabel92 = new javax.swing.JLabel();
-        jLabel93 = new javax.swing.JLabel();
-        jLabel94 = new javax.swing.JLabel();
-        jLabel95 = new javax.swing.JLabel();
-        jLabel96 = new javax.swing.JLabel();
-        jLabel97 = new javax.swing.JLabel();
-        jLabel98 = new javax.swing.JLabel();
-        jLabel99 = new javax.swing.JLabel();
-        estacaoTotem2 = new javax.swing.JLabel();
-        marcaTotem2 = new javax.swing.JLabel();
-        soTotem2 = new javax.swing.JLabel();
-        ramTotem2 = new javax.swing.JLabel();
-        ramDispTotem2 = new javax.swing.JLabel();
-        cpuTotem2 = new javax.swing.JLabel();
-        tempTotem2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -117,16 +83,16 @@ public class Home extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(201, 201, 201)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
@@ -134,7 +100,7 @@ public class Home extends javax.swing.JFrame {
         jPanel9.setBackground(new java.awt.Color(102, 102, 255));
 
         jLabel40.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel40.setText("Totem 1");
+        jLabel40.setText("Totem");
 
         jLabel41.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jLabel41.setText("RAM em uso: ");
@@ -187,9 +153,6 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(jLabel40))
-                            .addGroup(jPanel9Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jLabel45)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -227,13 +190,17 @@ public class Home extends javax.swing.JFrame {
                                     .addComponent(jLabel43))
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jLabel40)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(15, 15, 15)
                 .addComponent(jLabel40)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel45)
                     .addComponent(estacaoTotem1))
@@ -264,300 +231,6 @@ public class Home extends javax.swing.JFrame {
                 .addGap(20, 20, 20))
         );
 
-        jPanel10.setBackground(new java.awt.Color(102, 102, 255));
-
-        jPanel16.setBackground(new java.awt.Color(102, 102, 255));
-
-        jLabel100.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel100.setText("Totem 3");
-
-        jLabel101.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel101.setText("RAM em uso: ");
-
-        jLabel102.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel102.setText("CPU em uso: ");
-
-        jLabel103.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel103.setText("Sistema Op.: ");
-
-        jLabel104.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel104.setText("Estação: ");
-
-        jLabel105.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel105.setText("Marca: ");
-
-        jLabel106.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel106.setText("RAM disponível: ");
-
-        jLabel107.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel107.setText("Temperatura");
-
-        estacaoTotem3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        estacaoTotem3.setText("---");
-
-        marcaTotem3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        marcaTotem3.setText("---");
-
-        soTotem3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        soTotem3.setText("---");
-
-        ramTotem3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        ramTotem3.setText("0");
-
-        ramDispTotem3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        ramDispTotem3.setText("0");
-
-        cpuTotem3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        cpuTotem3.setText("0");
-
-        tempTotem3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        tempTotem3.setText("0");
-
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(jLabel101)
-                        .addGap(8, 8, 8)
-                        .addComponent(ramTotem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(jLabel106)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ramDispTotem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(jLabel107)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tempTotem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(soTotem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(jPanel16Layout.createSequentialGroup()
-                                    .addComponent(jLabel104)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(estacaoTotem3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(jPanel16Layout.createSequentialGroup()
-                                    .addComponent(jLabel105)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(marcaTotem3, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addComponent(jLabel102)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cpuTotem3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel103))
-                        .addGap(0, 8, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(jLabel100)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel100)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel104)
-                    .addComponent(estacaoTotem3))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel105)
-                    .addComponent(marcaTotem3))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel101)
-                    .addComponent(ramTotem3))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel106)
-                    .addComponent(ramDispTotem3))
-                .addGap(19, 19, 19)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel102)
-                    .addComponent(cpuTotem3))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel103)
-                    .addComponent(soTotem3))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel107)
-                    .addComponent(tempTotem3))
-                .addGap(20, 20, 20))
-        );
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(1, 1, 1)
-                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        jPanel12.setBackground(new java.awt.Color(102, 102, 255));
-
-        jPanel15.setBackground(new java.awt.Color(102, 102, 255));
-
-        jLabel92.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel92.setText("Totem 2");
-
-        jLabel93.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel93.setText("RAM em uso: ");
-
-        jLabel94.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel94.setText("CPU em uso: ");
-
-        jLabel95.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel95.setText("Sistema Op.: ");
-
-        jLabel96.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel96.setText("Estação: ");
-
-        jLabel97.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel97.setText("Marca: ");
-
-        jLabel98.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel98.setText("RAM disponível: ");
-
-        jLabel99.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel99.setText("Temperatura");
-
-        estacaoTotem2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        estacaoTotem2.setText("---");
-
-        marcaTotem2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        marcaTotem2.setText("---");
-
-        soTotem2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        soTotem2.setText("---");
-
-        ramTotem2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        ramTotem2.setText("0");
-
-        ramDispTotem2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        ramDispTotem2.setText("0");
-
-        cpuTotem2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        cpuTotem2.setText("0");
-
-        tempTotem2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        tempTotem2.setText("0");
-
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(jLabel93)
-                        .addGap(8, 8, 8)
-                        .addComponent(ramTotem2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(jLabel98)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ramDispTotem2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(jLabel99)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tempTotem2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(soTotem2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(jPanel15Layout.createSequentialGroup()
-                                    .addComponent(jLabel96)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(estacaoTotem2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(jPanel15Layout.createSequentialGroup()
-                                    .addComponent(jLabel97)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(marcaTotem2, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addComponent(jLabel94)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cpuTotem2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel95))
-                        .addGap(0, 8, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(jLabel92)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel92)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel96)
-                    .addComponent(estacaoTotem2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel97)
-                    .addComponent(marcaTotem2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel93)
-                    .addComponent(ramTotem2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel98)
-                    .addComponent(ramDispTotem2))
-                .addGap(19, 19, 19)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel94)
-                    .addComponent(cpuTotem2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel95)
-                    .addComponent(soTotem2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel99)
-                    .addComponent(tempTotem2))
-                .addGap(20, 20, 20))
-        );
-
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addGap(1, 1, 1)
-                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
         jButton1.setBackground(new java.awt.Color(102, 102, 255));
         jButton1.setText("Atualizar Dados");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -573,38 +246,29 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(57, 57, 57)
+                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(275, 275, 275)
+                        .addGap(89, 89, 89)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -657,76 +321,76 @@ public class Home extends javax.swing.JFrame {
             tempTotem1.setText(temp);
         }
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-      // Totem 2
-        // Atualizar dados da Estação
-        List<Estacao> estacaoT2 = con.query("SELECT idEstacao, fkEndereco, nomeEstacao FROM estacao JOIN totem ON totem.fkEstacao = estacao.idEstacao WHERE totem.fkEstacao = 1;", new BeanPropertyRowMapper(Estacao.class));
-        for (Estacao dado : estacaoT2) {
-            String estacao = dado.getNomeEstacao();
-            estacaoTotem2.setText(estacao);
-        }
-
-        // Atualizar dados da Marca
-        List<Totem> totemT2 = con.query("SELECT * FROM totem WHERE idTotem = 2;", new BeanPropertyRowMapper(Totem.class));
-        for (Totem dado : totemT2) {
-            String marca = dado.getMarca();
-            marcaTotem2.setText(marca);
-
-            String so = dado.getSo();
-            soTotem2.setText(so);
-        }
-
-        // Atualizar dados da CPU
-        List<Dado> cpuT2 = con.query("SELECT * FROM dado WHERE data_dado = (select max(data_dado) from dado where fkTotem = 2);", new BeanPropertyRowMapper(Dado.class));
-
-        for (Dado dado : cpuT2) {
-            String cpuUso = dado.getProcessadorUso();
-            cpuTotem2.setText(cpuUso);
-            // Atualizar memoria RAM
-            String ramUso = dado.getMemoriaUso();
-            ramTotem2.setText(ramUso);
-            String ramDisp = dado.getMemoriaDisponivel();
-            ramDispTotem2.setText(ramDisp);
-            // Atualizar Temperatura
-            String temp = String.valueOf(dado.getTemperatura());
-            tempTotem2.setText(temp);
-        }
-        
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-      // Totem 3
-        // Atualizar dados da Estação
-        List<Estacao> estacaoT3 = con.query("SELECT idEstacao, fkEndereco, nomeEstacao FROM estacao JOIN totem ON totem.fkEstacao = estacao.idEstacao WHERE totem.fkEstacao = 3;", new BeanPropertyRowMapper(Estacao.class));
-        for (Estacao dado : estacaoT3) {
-            String estacao = dado.getNomeEstacao();
-            estacaoTotem3.setText(estacao);
-        }
-
-        // Atualizar dados da Marca
-        List<Totem> totemT3 = con.query("SELECT * FROM totem WHERE idTotem = 3;", new BeanPropertyRowMapper(Totem.class));
-        for (Totem dado : totemT3) {
-            String marca = dado.getMarca();
-            marcaTotem3.setText(marca);
-
-            String so = dado.getSo();
-            soTotem3.setText(so);
-        }
-
-        // Atualizar dados da CPU
-        List<Dado> cpuT3 = con.query("SELECT * FROM dado WHERE data_dado = (select max(data_dado) from dado where fkTotem = 3);", new BeanPropertyRowMapper(Dado.class));
-
-        for (Dado dado : cpuT3) {
-            String cpuUso = dado.getProcessadorUso();
-            cpuTotem3.setText(cpuUso);
-            // Atualizar memoria RAM
-            String ramUso = dado.getMemoriaUso();
-            ramTotem3.setText(ramUso);
-            String ramDisp = dado.getMemoriaDisponivel();
-            ramDispTotem3.setText(ramDisp);
-            // Atualizar Temperatura
-            String temp = String.valueOf(dado.getTemperatura());
-            tempTotem3.setText(temp);
-        } 
+//
+//      // Totem 2
+//        // Atualizar dados da Estação
+//        List<Estacao> estacaoT2 = con.query("SELECT idEstacao, fkEndereco, nomeEstacao FROM estacao JOIN totem ON totem.fkEstacao = estacao.idEstacao WHERE totem.fkEstacao = 1;", new BeanPropertyRowMapper(Estacao.class));
+//        for (Estacao dado : estacaoT2) {
+//            String estacao = dado.getNomeEstacao();
+//            estacaoTotem2.setText(estacao);
+//        }
+//
+//        // Atualizar dados da Marca
+//        List<Totem> totemT2 = con.query("SELECT * FROM totem WHERE idTotem = 2;", new BeanPropertyRowMapper(Totem.class));
+//        for (Totem dado : totemT2) {
+//            String marca = dado.getMarca();
+//            marcaTotem2.setText(marca);
+//
+//            String so = dado.getSo();
+//            soTotem2.setText(so);
+//        }
+//
+//        // Atualizar dados da CPU
+//        List<Dado> cpuT2 = con.query("SELECT * FROM dado WHERE data_dado = (select max(data_dado) from dado where fkTotem = 2);", new BeanPropertyRowMapper(Dado.class));
+//
+//        for (Dado dado : cpuT2) {
+//            String cpuUso = dado.getProcessadorUso();
+//            cpuTotem2.setText(cpuUso);
+//            // Atualizar memoria RAM
+//            String ramUso = dado.getMemoriaUso();
+//            ramTotem2.setText(ramUso);
+//            String ramDisp = dado.getMemoriaDisponivel();
+//            ramDispTotem2.setText(ramDisp);
+//            // Atualizar Temperatura
+//            String temp = String.valueOf(dado.getTemperatura());
+//            tempTotem2.setText(temp);
+//        }
+//        
+//// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//      // Totem 3
+//        // Atualizar dados da Estação
+//        List<Estacao> estacaoT3 = con.query("SELECT idEstacao, fkEndereco, nomeEstacao FROM estacao JOIN totem ON totem.fkEstacao = estacao.idEstacao WHERE totem.fkEstacao = 3;", new BeanPropertyRowMapper(Estacao.class));
+//        for (Estacao dado : estacaoT3) {
+//            String estacao = dado.getNomeEstacao();
+//            estacaoTotem3.setText(estacao);
+//        }
+//
+//        // Atualizar dados da Marca
+//        List<Totem> totemT3 = con.query("SELECT * FROM totem WHERE idTotem = 3;", new BeanPropertyRowMapper(Totem.class));
+//        for (Totem dado : totemT3) {
+//            String marca = dado.getMarca();
+//            marcaTotem3.setText(marca);
+//
+//            String so = dado.getSo();
+//            soTotem3.setText(so);
+//        }
+//
+//        // Atualizar dados da CPU
+//        List<Dado> cpuT3 = con.query("SELECT * FROM dado WHERE data_dado = (select max(data_dado) from dado where fkTotem = 3);", new BeanPropertyRowMapper(Dado.class));
+//
+//        for (Dado dado : cpuT3) {
+//            String cpuUso = dado.getProcessadorUso();
+//            cpuTotem3.setText(cpuUso);
+//            // Atualizar memoria RAM
+//            String ramUso = dado.getMemoriaUso();
+//            ramTotem3.setText(ramUso);
+//            String ramDisp = dado.getMemoriaDisponivel();
+//            ramDispTotem3.setText(ramDisp);
+//            // Atualizar Temperatura
+//            String temp = String.valueOf(dado.getTemperatura());
+//            tempTotem3.setText(temp);
+//        } 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -756,6 +420,8 @@ public class Home extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -767,21 +433,9 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel cpuTotem1;
-    private javax.swing.JLabel cpuTotem2;
-    private javax.swing.JLabel cpuTotem3;
     private javax.swing.JLabel estacaoTotem1;
-    private javax.swing.JLabel estacaoTotem2;
-    private javax.swing.JLabel estacaoTotem3;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
-    private javax.swing.JLabel jLabel104;
-    private javax.swing.JLabel jLabel105;
-    private javax.swing.JLabel jLabel106;
-    private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -790,35 +444,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel93;
-    private javax.swing.JLabel jLabel94;
-    private javax.swing.JLabel jLabel95;
-    private javax.swing.JLabel jLabel96;
-    private javax.swing.JLabel jLabel97;
-    private javax.swing.JLabel jLabel98;
-    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JLabel marcaTotem1;
-    private javax.swing.JLabel marcaTotem2;
-    private javax.swing.JLabel marcaTotem3;
     private javax.swing.JLabel ramDispTotem1;
-    private javax.swing.JLabel ramDispTotem2;
-    private javax.swing.JLabel ramDispTotem3;
     private javax.swing.JLabel ramTotem1;
-    private javax.swing.JLabel ramTotem2;
-    private javax.swing.JLabel ramTotem3;
     private javax.swing.JLabel soTotem1;
-    private javax.swing.JLabel soTotem2;
-    private javax.swing.JLabel soTotem3;
     private javax.swing.JLabel tempTotem1;
-    private javax.swing.JLabel tempTotem2;
-    private javax.swing.JLabel tempTotem3;
     // End of variables declaration//GEN-END:variables
 }
